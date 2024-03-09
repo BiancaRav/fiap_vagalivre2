@@ -2,6 +2,7 @@ package br.com.thuler.vagalivre.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -22,14 +23,14 @@ import br.com.thuler.vagalivre.R
 fun CircleButton(size: Dp, icon: ImageVector, color: Color, onClick: () -> Unit) {
 
     Button(
-        modifier = Modifier.size(size).padding(0.dp),
+        modifier = Modifier.size(size).offset(x = 100.dp, y = 30.dp),
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.blue_button)),
         shape = CircleShape
+
     ) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomEnd){
             Icon(icon, contentDescription = "Ícone do Botão", tint = color, modifier = Modifier.size(size))
         }
     }
-    
 }
