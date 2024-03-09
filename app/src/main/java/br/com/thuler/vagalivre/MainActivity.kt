@@ -33,6 +33,8 @@ import br.com.thuler.vagalivre.components.RectangularButton
 import br.com.thuler.vagalivre.components.UserPhoto
 import br.com.thuler.vagalivre.screens.DadosScreen
 import br.com.thuler.vagalivre.screens.DadosScreenViewModel
+import br.com.thuler.vagalivre.screens.LoginScreen
+import br.com.thuler.vagalivre.screens.LoginScreenViewModel
 import br.com.thuler.vagalivre.ui.theme.VagaLivreTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,8 +47,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //LoginScreen(viewModel = LoginScreenViewModel())
-                    DadosScreen(viewModel = DadosScreenViewModel())
+                    LoginScreen(viewModel = LoginScreenViewModel())
                 }
             }
         }
