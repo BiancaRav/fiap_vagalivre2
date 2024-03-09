@@ -24,7 +24,7 @@ import br.com.thuler.vagalivre.ui.theme.Roboto
 @Composable
 fun Header(title: String) {
 
-    Box(modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp)){
+    Box(modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 10.dp)){
 
         Row(
             modifier = Modifier.clickable { /* TO DO VOLTAR*/ },
